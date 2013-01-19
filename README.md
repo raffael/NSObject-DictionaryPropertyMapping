@@ -4,6 +4,24 @@ This is a category of NSObject to provide methods to inject a given NSDictionary
 
 The set of properties to inject/to read are not determined automatically, but have to be specified using a dictionary or an array.
 
+## Scenario
+
+Say we have a JSON result coming from the server:
+
+	{
+		"first-name": "John",
+		"last-name": "Appleseed"
+	}
+
+and we have a *Person* object with the two NSString properties *fastName* and *lastName*. Instead of cycling through the entries of our JSON NSDictionary, and manually setting the properties using the synthesized setter methods, let's just inject the NSDictionary by providing both the data and a mapping dictionary:
+
+	[person inject:JSON usingMapping:@{
+		@"first-name": @"firstName",
+		@"last-name": @"lastName"
+	}];
+
+That's it.
+
 ## Usage:
 ### (1.1) Injecting using dictionary mapping
 	// assuming myObject has properties NSString *firstName, *lastName;
