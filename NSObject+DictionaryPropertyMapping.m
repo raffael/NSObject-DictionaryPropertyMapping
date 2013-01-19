@@ -5,8 +5,6 @@
 //  Copyright (c) 2013 raffael.me. All rights reserved.
 //
 
-// Under BSD License.
-
 #import "NSObject+DictionaryPropertyMapping.h"
 
 @implementation NSObject (DictionaryPropertyMapping)
