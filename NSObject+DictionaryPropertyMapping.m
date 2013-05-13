@@ -35,7 +35,7 @@
 }
 
 - (NSDictionary *) dictionaryRepresentationUsingMapping:(NSDictionary *)mapping {
-	NSAssert(mapping, @"Mapping not set for suckUsingMapping:; operation.");
+	NSAssert(mapping, @"Mapping not set for dictionaryRepresentationUsingMapping:; operation.");
 
 	NSMutableDictionary *tmpDict = [NSMutableDictionary dictionary];
 

@@ -45,5 +45,17 @@ That's it.
 	NSArray *list = @[@"firstName", @"lastName"];
 	NSDictionary *representation = [myObject dictionaryRepresentationUsingList:list];
 
+## Contact
+
+* Raffael Hannemann
+* [@raffael-me](http://www.twitter.com/raffael-me/)
+* http://www.raffael.me/
+
 ## License
-Under BSD License. I mean it's just a category!
+
+Copyright (c) 2013 Raffael Hannemann
+Under BSD License.
+
+## Want more?
+
+Follow [@raffael-me](http://www.twitter.com/raffael-me/) for similar releases.

@@ -40,6 +40,15 @@
  * NSDictionary *representation = [myObject dictionaryRepresentationUsingList:list];
  */
 
+/**
+ * This is a category of NSObject to provide methods to inject a given
+ * NSDictionary based data source, e.g. coming from a JSON dictionary,
+ * into the object or to get the NSDictionary data source that is representing
+ * the current set of properties of an object.
+ *
+ * The set of properties to inject/to read are not determined automatically,
+ * but have to be specified using a dictionary or an array.
+ */
 #import <Foundation/Foundation.h>
 
 @interface NSObject (DictionaryPropertyMapping)
